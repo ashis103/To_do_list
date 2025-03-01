@@ -1,0 +1,13 @@
+# Optional If your app grows and needs more services (e.g., a database), you might want to use Docker Compose to manage multi-container applications. Below is a basic docker-compose.yml file:
+
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development
