@@ -9,7 +9,8 @@ This will create an image named flask-todo-app based on your Dockerfile.
 
 5. Run the Docker Container:
 
-   docker run -p 5000:5000 flask-todo-app
+docker run -p 5000:5000 flask-todo-app
 
+This will start the Flask app inside the Docker container and expose port 5000 to your localhost. You should now be able to access the app at http://localhost:5000.
 
-   This will start the Flask app inside the Docker container and expose port 5000 to your localhost. You should now be able to access the app at http://localhost:5000.
+docker-compose up --build
